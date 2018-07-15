@@ -6,6 +6,33 @@
  var totalScore = 0;     // increment with each correct answer
  var radioValue = [];
  var answerArray = ["a", "b", "c", "a", "b"];
+ 
+
+ var questionArray =["Which person below is NOT currently on the Supreme Court?", 
+                    "Which person below is a professional soccer player?", 
+                    "Which person below was a former Vice President of the USA?", 
+                    "Which person below was the first Secretary of the Treasury?", 
+                    "Which person below is a former Prime Minister of the UK?"];
+
+
+ // insert questions from array
+
+ $(document).ready(function() {
+
+    
+    for (i=0; i < totalQuestions; i++) {
+        $("#q" + (i + 1).toString()).html(questionArray[i]);
+        // $("#q1").html(questionArray[i]);
+        console.log(questionArray[i]);
+
+    }
+
+   
+
+	// executes when document is ready
+});
+
+ 
 
  var myVar = setInterval(myTimer, 1000);
 
@@ -19,17 +46,14 @@
  }
 
  function userInput() {    
-    radioValue[0] = $("input[name='q1']:checked").val();
-    console.log(radioValue[0]);
-    radioValue[1] = $("input[name='q2']:checked").val();
-    console.log(radioValue[1]);
-    radioValue[2] = $("input[name='q3']:checked").val();
-    console.log(radioValue[2]);
-    radioValue[3] = $("input[name='q4']:checked").val();
-    console.log(radioValue[3]);
-    radioValue[4] = $("input[name='q5']:checked").val();
-    console.log(radioValue[4]);
+    for (i=0; i < totalQuestions; i++) {
+        var stringTest = "q" + (i + 1);
+        console.log(stringTest);
+        radioValue[i] = $("input[name=" + stringTest + "]:checked").val();
+        console.log(radioValue[i]);
 
+    }
+    
     compareAnswers();
 
    
