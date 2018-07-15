@@ -2,8 +2,8 @@
 
 // global variables
 
- var timerVariable = 10; // why do I need this?
- var timerRunning = false;
+ var timerVariable = 10; 
+ // var timerRunning = false;
  var totalQuestions = 5;
  var totalScore = 0;     // increment with each correct answer
  var radioValue = [];
@@ -20,8 +20,7 @@
     }
  }
 
- function userInput() {
-    
+ function userInput() {    
     radioValue[0] = $("input[name='q1']:checked").val();
     console.log(radioValue[0]);
     radioValue[1] = $("input[name='q2']:checked").val();
@@ -39,7 +38,6 @@
     }
 
  function compareAnswers() {
-
     for(i=0; i < totalQuestions; i++) {
         if (radioValue[i] == answerArray[i]) {
             totalScore++;
@@ -50,17 +48,4 @@
     alert("You correctly answered: " + totalScore + " out of: " + totalQuestions);
  }
 
-
-
-
-
- 
-
-
-
-
-
-
-
-//$("#randomScore").html("Score needed: " + gameRandom);
 	
