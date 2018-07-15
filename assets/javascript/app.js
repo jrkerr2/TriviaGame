@@ -1,5 +1,3 @@
-// need a trivia theme + backgrounds & style
-
 // global variables
 
  var timerVariable = 10; 
