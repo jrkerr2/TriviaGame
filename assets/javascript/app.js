@@ -11,11 +11,14 @@
  var myVar = setInterval(myTimer, 1000);
 
  function myTimer() {
-    var d = new Date();
-    document.getElementById("timerStatus").innerHTML = d.toLocaleTimeString();
+    timerVariable--;
+    $("#timerStatus").html("Time Left: " + timerVariable);
+    if (timerVariable == 0) {
+        clearInterval(myVar);
+    }
  }
 
- myTimer();
+ //myTimer();
  
 
 
