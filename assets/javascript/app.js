@@ -15,12 +15,13 @@
                     "Which person was a former Prime Minister of the UK?"];
 
 
- // insert questions from array
+ 
 
  $(document).ready(function() {
 
     $("#headmessage").html("Answer the following questions in " + timerVariable + " seconds");
 
+    // insert questions from array
     
     for (i=0; i < totalQuestions; i++) {
         $("#q" + (i + 1).toString()).html(questionArray[i]);
