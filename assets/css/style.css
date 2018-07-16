@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    background-color: grey;
+    padding-top: 50px;
+    
+    
+}
+
+h3 {
+    
+    font-weight: bold;
+    color: white;
+
+
+}
+
+h1 {
+    
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#timerStatus {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    color: red;
+    border: 10px green;
+    background-color: greenyellow;
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.container {
+    margin: 50px auto;
+    padding: 50px;
+    background-image: url("../images/darker.jpg");
+    color: white;
+   
+
+
+}
+
