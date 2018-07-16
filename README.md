@@ -10,10 +10,11 @@ homework week 5
     + The code can be seen here: https://jrkerr2.github.io/TriviaGame/
 
 - Needed enhancements from MVP
-    + Better styling and better spacing of radio buttons
+    + Better styling and better spacing of radio buttons; add bootstrap helpers
     + Dynamic addition of answers to the page
     + Force user to top of the page after browser refresh
     + Add Submit button for user-initated scoring
+    + Add dynamic, in-page win/loss message(s)
 
 - Known defects
     + (lack of) Responsiveness
