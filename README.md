@@ -14,6 +14,7 @@ homework week 5
     + Dynamic addition of answers to the page
     + Force user to top of the page after browser refresh
     + Add Submit button for user-initated scoring
+    + Add Start button for user-initated game play (show/hide with timer)
     + Add dynamic, in-page win/loss message(s)
 
 - Known defects
