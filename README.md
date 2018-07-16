@@ -13,4 +13,8 @@ homework week 5
     + Better styling and better spacing of radio buttons
     + Dynamic addition of answers to the page
     + Force user to top of the page after browser refresh
+    + Add Submit button for user-initated scoring
+
+- Known defects
+    + (lack of) Responsiveness
 
